@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Art Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Suisse+Int%27l+Mono:wght@400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo">V O I D</a>
+    <ul class="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-number">01</div>
+    <div class="hero-content">
+      <div class="hero-tag reveal reveal-1">Digital Artist &amp; Visual Designer</div>
+      <h1 class="reveal reveal-2">Between<br><em>light</em><br>&amp; shadow</h1>
+      <p class="hero-desc reveal reveal-3">
+        Exploring the boundary where code becomes canvas. Generative forms, digital textures, and meditative
+        compositions that exist only in the machine.
+      </p>
+      <div class="hero-scroll reveal reveal-4">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" style="padding-top: 0; padding-left: 0; padding-right: 0;">
+    <div style="padding: 0 var(--gap) 3rem;">
+      <div class="section-label">Selected Works</div>
+    </div>
+    <div class="works-grid">
+      <!-- Ponyo1 -->
+      <div class="work-item Ponyo1-gallery">
+        <img src="Images/Ponyo1/Ponyo1_1.png" class="work-image" alt="Ponyo1 Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Ponyo</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openPonyo1Gallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Ponyo1 Gallery Modal -->
+      <div id="Ponyo1Modal" class="gallery-modal">
+        <span class="close-btn" onclick="closePonyo1Gallery()">&times;</span>
+
+        <img id="Ponyo1Image" src="Images/Ponyo1/Ponyo1_1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevPonyo1()">◀</button>
+          <button onclick="nextPonyo1()">▶</button>
+        </div>
+      </div>
+
+      <!-- Kayden Break -->
+      <div class="work-item Kayden-gallery">
+        <img src="Images/Kayden/Kayden1.png" class="work-image" alt="Kayden Brake Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Kayden Brake</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openKaydenGallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Kayden Gallery Modal -->
+      <div id="KaydenModal" class="gallery-modal">
+        <span class="close-btn" onclick="closeKaydenGallery()">&times;</span>
+
+        <img id="KaydenImage" src="Images/Kayden/Kayden1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevKayden()">◀</button>
+          <button onclick="nextKayden()">▶</button>
+        </div>
+      </div>
+
+      <!-- Cloud -->
+      <div class="work-item Cloud-gallery">
+        <img src="Images/Cloud/Cloud1.png" class="work-image" alt="Cloud Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Cloud</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openCloudGallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Cloud Gallery Modal -->
+      <div id="CloudModal" class="gallery-modal">
+        <span class="close-btn" onclick="closeCloudGallery()">&times;</span>
+
+        <img id="CloudImage" src="Images/Cloud/Cloud1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevCloud()">◀</button>
+          <button onclick="nextCloud()">▶</button>
+        </div>
+      </div>
+      
+      <!-- Starry Night -->
+      <div class="work-item Starry_Night-gallery">
+        <img src="Images/Starry_Night/Starry_Night1.png" class="work-image" alt="Starry Night Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Starry Night</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openStarry_NightGallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Starry Night Gallery Modal -->
+      <div id="Starry_NightModal" class="gallery-modal">
+        <span class="close-btn" onclick="closeStarry_NightGallery()">&times;</span>
+
+        <img id="Starry_NightImage" src="Images/Starry_Night/Starry_Night1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevStarry_Night()">◀</button>
+          <button onclick="nextStarry_Night()">▶</button>
+        </div>
+      </div>
+
+      <!-- Pumpkin Night -->
+      <div class="work-item Pumpkin_Night-gallery">
+        <img src="Images/Pumpkin_Night/Pumpkin_Night1.png" class="work-image" alt="Pumpkin Night Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Pumpkin Night</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openPumpkin_NightGallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Pumpkin Night Gallery Modal -->
+      <div id="Pumpkin_NightModal" class="gallery-modal">
+        <span class="close-btn" onclick="closePumpkin_NightGallery()">&times;</span>
+
+        <img id="Pumpkin_NightImage" src="Images/Pumpkin_Night/Pumpkin_Night1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevPumpkin_Night()">◀</button>
+          <button onclick="nextPumpkin_Night()">▶</button>
+        </div>
+      </div>
+      
+      <!-- Scream -->
+      <div class="work-item Scream-gallery">
+        <img src="Images/Scream/Scream1.png" class="work-image" alt="Scream Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Scream</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openScreamGallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Scream Gallery Modal -->
+      <div id="ScreamModal" class="gallery-modal">
+        <span class="close-btn" onclick="closeScreamGallery()">&times;</span>
+
+        <img id="ScreamImage" src="Images/Scream/Scream1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevScream()">◀</button>
+          <button onclick="nextScream()">▶</button>
+        </div>
+      </div>
+
+      <!-- Ponyo2 -->
+      <div class="work-item Ponyo2-gallery">
+        <img src="Images/Ponyo2/Ponyo2_1.png" class="work-image" alt="Ponyo2 Artwork">
+
+        <div class="work-overlay">
+          <div class="work-info">
+            <h3>Ponyo</h3>
+            <p>Click to View</p>
+
+            <button class="gallery-btn" onclick="openPonyo2Gallery()">
+              CLICK
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Ponyo2 Gallery Modal -->
+      <div id="Ponyo2Modal" class="gallery-modal">
+        <span class="close-btn" onclick="closePonyo2Gallery()">&times;</span>
+
+        <img id="Ponyo1Image" src="Images/Ponyo2/Ponyo2_1.png">
+
+        <div class="gallery-controls">
+          <button onclick="prevPonyo2()">◀</button>
+          <button onclick="nextPonyo2()">▶</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-portrait">
+          <canvas id="portrait-canvas" style="width:100%;height:100%;display:block;"></canvas>
+        </div>
+        <div class="about-accent"></div>
+      </div>
+      <div class="about-text">
+        <h2>The art of<br><em>digital</em><br>silence</h2>
+        <p>I create digital artworks that explore tension — between order and chaos, light and dark, the handmade and
+          the algorithmic. My practice spans generative code, digital painting, and immersive 3D environments.</p>
+        <p>Based between Seoul and London, I work with institutions, galleries, and collectors seeking work that
+          challenges the boundary between technology and art.</p>
+        <div class="skills-list">
+          <span class="skill-tag">Generative Art</span>
+          <span class="skill-tag">3D / Blender</span>
+          <span class="skill-tag">WebGL</span>
+          <span class="skill-tag">Digital Painting</span>
+          <span class="skill-tag">TouchDesigner</span>
+          <span class="skill-tag">Processing</span>
+          <span class="skill-tag">AI Art</span>
+          <span class="skill-tag">Motion</span>
+        </div>
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num">7<em>+</em></span>
+        <span class="stat-label">Years of Practice</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">130<em>+</em></span>
+        <span class="stat-label">Works Created</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">24</span>
+        <span class="stat-label">Exhibitions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label" style="justify-content:center;gap:1rem;">
+        <span style="flex:none;">Get in Touch</span>
+      </div>
+      <h2>Let's<br>create<br><em>together</em></h2>
+      <p>Available for commissions, exhibitions, and collaborations. Always interested in projects that push the limits
+        of what digital art can be.</p>
+      <a href="mailto:studio@voidart.co" class="contact-email">studio@voidart.co</a>
+      <div class="social-row">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Twitter / X</a>
+        <a href="#" class="social-link">Foundation</a>
+        <a href="#" class="social-link">Are.na</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Void Studio</p>
+    <p>Seoul · London</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
